@@ -10,7 +10,7 @@ import galleryParts from "@/assets/gallery-parts.jpg";
 const galleryItems = [
   {
     image: galleryExcavator,
-    title: "حفارات هيونداي",
+    title: "حفارات",
     category: "آليات ثقيلة",
   },
   {
@@ -41,14 +41,18 @@ const galleryItems = [
 ];
 
 const GallerySection = () => {
-  const [visibleItems, setVisibleItems] = useState<boolean[]>(new Array(galleryItems.length).fill(false));
+  const [visibleItems, setVisibleItems] = useState<boolean[]>(
+    new Array(galleryItems.length).fill(false)
+  );
   const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          const index = itemRefs.current.indexOf(entry.target as HTMLDivElement);
+          const index = itemRefs.current.indexOf(
+            entry.target as HTMLDivElement
+          );
           if (entry.isIntersecting && index !== -1) {
             setVisibleItems((prev) => {
               const newState = [...prev];
@@ -80,7 +84,8 @@ const GallerySection = () => {
             اكتشف <span className="text-primary">منتجاتنا المتميزة</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            نعرض لكم مجموعة من أحدث الآليات والمركبات والمعدات التي نوفرها لعملائنا الكرام
+            نعرض لكم مجموعة من أحدث الآليات والمركبات والمعدات التي نوفرها
+            لعملائنا الكرام
           </p>
         </div>
 

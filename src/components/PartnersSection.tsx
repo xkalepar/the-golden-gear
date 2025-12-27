@@ -9,7 +9,7 @@ const partners = [
   },
   {
     name: "Hyundai Excavators",
-    nameAr: "حفارات هيونداي",
+    nameAr: "حفارات",
   },
   {
     name: "LG Kawasaki",
@@ -38,7 +38,8 @@ const PartnersSection = () => {
             <span className="text-primary">شراكات عالمية</span> موثوقة
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            نتعاون مع أفضل العلامات التجارية والموردين العالميين لتوفير منتجات عالية الجودة
+            نتعاون مع أفضل العلامات التجارية والموردين العالميين لتوفير منتجات
+            عالية الجودة
           </p>
         </div>
 

@@ -1,5 +1,12 @@
 import { useState } from "react";
-import { MapPin, Phone, Mail, MessageCircle, Send, CheckCircle } from "lucide-react";
+import {
+  MapPin,
+  Phone,
+  Mail,
+  MessageCircle,
+  Send,
+  CheckCircle,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -9,27 +16,27 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "العنوان",
-    value: "جود دعم، الزاوية، ليبيا",
+    value: "جود دائم، الزاوية، ليبيا",
     subValue: "رقم السجل: 13-94223",
   },
   {
     icon: Phone,
     label: "الهاتف",
-    value: "+218-91-8170378",
-    href: "tel:+218918170378",
+    value: "+218-92-8180372",
+    href: "tel:+218928180372",
   },
   {
     icon: MessageCircle,
     label: "واتساب",
-    value: "+218-94-4041633",
-    href: "https://wa.me/218944041633",
+    value: "+218-94-0571111",
+    href: "https://wa.me/218940571111",
     isWhatsapp: true,
   },
   {
     icon: Mail,
     label: "البريد الإلكتروني",
-    value: "Nabeil96@yahoo.com",
-    href: "mailto:Nabeil96@yahoo.com",
+    value: "contact@alturs-aldhahabi.ly",
+    href: "mailto:contact@alturs-aldhahabi.ly",
   },
 ];
 
@@ -44,8 +51,12 @@ const ContactSection = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    if (!formData.name.trim() || !formData.phone.trim() || !formData.message.trim()) {
+
+    if (
+      !formData.name.trim() ||
+      !formData.phone.trim() ||
+      !formData.message.trim()
+    ) {
       toast({
         title: "خطأ",
         description: "يرجى ملء جميع الحقول المطلوبة",
@@ -55,13 +66,13 @@ const ContactSection = () => {
     }
 
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1500));
-    
+
     setIsSubmitting(false);
     setIsSubmitted(true);
-    
+
     toast({
       title: "تم الإرسال بنجاح",
       description: "سنتواصل معك في أقرب وقت ممكن",
@@ -74,7 +85,9 @@ const ContactSection = () => {
     }, 3000);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData((prev) => ({
       ...prev,
       [e.target.name]: e.target.value,
@@ -119,7 +132,10 @@ const ContactSection = () => {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-secondary-foreground mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-secondary-foreground mb-2"
+                  >
                     الاسم الكامل
                   </label>
                   <Input
@@ -133,7 +149,10 @@ const ContactSection = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-secondary-foreground mb-2">
+                  <label
+                    htmlFor="phone"
+                    className="block text-sm font-medium text-secondary-foreground mb-2"
+                  >
                     رقم الهاتف
                   </label>
                   <Input
@@ -149,7 +168,10 @@ const ContactSection = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-secondary-foreground mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-secondary-foreground mb-2"
+                  >
                     الرسالة
                   </label>
                   <Textarea
@@ -173,8 +195,20 @@ const ContactSection = () => {
                   {isSubmitting ? (
                     <span className="flex items-center gap-2">
                       <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
-                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
-                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                          fill="none"
+                        />
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                        />
                       </svg>
                       جاري الإرسال...
                     </span>
@@ -201,7 +235,11 @@ const ContactSection = () => {
                   key={index}
                   href={info.href || "#"}
                   target={info.href?.startsWith("http") ? "_blank" : undefined}
-                  rel={info.href?.startsWith("http") ? "noopener noreferrer" : undefined}
+                  rel={
+                    info.href?.startsWith("http")
+                      ? "noopener noreferrer"
+                      : undefined
+                  }
                   className={`flex items-start gap-4 p-4 rounded-xl transition-all duration-300 ${
                     info.href
                       ? "bg-charcoal-light hover:bg-primary group cursor-pointer"

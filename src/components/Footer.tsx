@@ -83,25 +83,25 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <span className="text-muted-foreground">
-                  جود دعم، الزاوية، ليبيا
+                  جود دائم، الزاوية، ليبيا
                 </span>
               </li>
               <li>
                 <a
-                  href="tel:+218918170378"
+                  href="tel:+218928180372"
                   className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span dir="ltr">+218-91-8170378</span>
+                  <span dir="ltr">+218-92-8180372</span>
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:Nabeil96@yahoo.com"
+                  href="mailto:contact@alturs-aldhahabi.ly"
                   className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Mail className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span dir="ltr">Nabeil96@yahoo.com</span>
+                  <span dir="ltr">contact@alturs-aldhahabi.ly</span>
                 </a>
               </li>
             </ul>
