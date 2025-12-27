@@ -6,7 +6,7 @@ const MapSection = () => {
         <h3 className="text-lg font-bold text-secondary-foreground mb-2">
           موقعنا
         </h3>
-        <p className="text-muted-foreground mb-1">جود دائم، الزاوية، ليبيا</p>
+        <p className="text-muted-foreground mb-1">جوددائم، الزاوية، ليبيا</p>
       </div>
 
       {/* Google Map Embed */}

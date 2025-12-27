@@ -16,7 +16,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "العنوان",
-    value: "جود دائم، الزاوية، ليبيا",
+    value: "جوددائم، الزاوية، ليبيا",
     subValue: "رقم السجل: 13-94223",
   },
   {
