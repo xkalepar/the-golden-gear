@@ -7,7 +7,6 @@ const MapSection = () => {
           موقعنا
         </h3>
         <p className="text-muted-foreground mb-1">جود دائم، الزاوية، ليبيا</p>
-        <p className="text-sm text-primary">رقم السجل: 13-94223</p>
       </div>
 
       {/* Google Map Embed */}

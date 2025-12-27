@@ -14,10 +14,12 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">
-                  ت
-                </span>
+              <div className="w-12 h-12 rounded-lg  flex items-center justify-center">
+                             <img
+                src="/logo.jpg"
+                alt="Logo"
+                className="w-10 h-10 rounded-md"
+              />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-primary">
@@ -32,15 +34,7 @@ const Footer = () => {
               شركة رائدة في استيراد الآليات الثقيلة والمركبات وقطع الغيار
               الأصلية، نلتزم بتقديم أفضل المنتجات بجودة عالمية وأسعار تنافسية.
             </p>
-            <div className="flex items-center gap-3">
-              <span className="text-sm text-muted-foreground">رقم السجل:</span>
-              <span
-                className="text-secondary-foreground font-semibold"
-                dir="ltr"
-              >
-                13-94223
-              </span>
-            </div>
+          
           </div>
 
           {/* Quick Links */}
