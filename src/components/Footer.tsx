@@ -15,26 +15,39 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">ت</span>
+                <span className="text-primary-foreground font-bold text-xl">
+                  ت
+                </span>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-primary">شركة الترس الذهبي</h3>
-                <p className="text-sm text-muted-foreground">للآليات الثقيلة والمركبات</p>
+                <h3 className="text-xl font-bold text-primary">
+                  شركة الترس الذهبي
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  للآليات الثقيلة والمركبات
+                </p>
               </div>
             </div>
             <p className="text-muted-foreground leading-relaxed mb-6 max-w-md">
-              شركة رائدة في استيراد الآليات الثقيلة والمركبات وقطع الغيار الأصلية،
-              نلتزم بتقديم أفضل المنتجات بجودة عالمية وأسعار تنافسية.
+              شركة رائدة في استيراد الآليات الثقيلة والمركبات وقطع الغيار
+              الأصلية، نلتزم بتقديم أفضل المنتجات بجودة عالمية وأسعار تنافسية.
             </p>
             <div className="flex items-center gap-3">
               <span className="text-sm text-muted-foreground">رقم السجل:</span>
-              <span className="text-secondary-foreground font-semibold" dir="ltr">13-94223</span>
+              <span
+                className="text-secondary-foreground font-semibold"
+                dir="ltr"
+              >
+                13-94223
+              </span>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-bold text-secondary-foreground mb-6">روابط سريعة</h4>
+            <h4 className="text-lg font-bold text-secondary-foreground mb-6">
+              روابط سريعة
+            </h4>
             <ul className="space-y-3">
               {[
                 { href: "#hero", label: "الرئيسية" },
@@ -48,7 +61,9 @@ const Footer = () => {
                     href={link.href}
                     onClick={(e) => {
                       e.preventDefault();
-                      document.querySelector(link.href)?.scrollIntoView({ behavior: "smooth" });
+                      document
+                        .querySelector(link.href)
+                        ?.scrollIntoView({ behavior: "smooth" });
                     }}
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
@@ -61,11 +76,15 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-bold text-secondary-foreground mb-6">تواصل معنا</h4>
+            <h4 className="text-lg font-bold text-secondary-foreground mb-6">
+              تواصل معنا
+            </h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                <span className="text-muted-foreground">جود دعم، الزاوية، ليبيا</span>
+                <span className="text-muted-foreground">
+                  جود دعم، الزاوية، ليبيا
+                </span>
               </li>
               <li>
                 <a
@@ -91,13 +110,13 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-border">
+      <div className=" border-border">
         <div className="container-custom py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-muted-foreground text-center md:text-right">
               © {currentYear} شركة الترس الذهبي. جميع الحقوق محفوظة.
             </p>
-            
+
             {/* Scroll to Top */}
             <button
               onClick={scrollToTop}
@@ -108,6 +127,16 @@ const Footer = () => {
             </button>
           </div>
         </div>
+      </div>
+
+      {/* design by */}
+      <div className="text-center py-4 bg-secondary/50 border-t border-border">
+        <span className="text-sm text-muted-foreground">
+          تصميم وتطوير بواسطة{" "}
+          <a href="https://mnfd.ly" className="text-primary">
+            منفذ
+          </a>
+        </span>
       </div>
     </footer>
   );

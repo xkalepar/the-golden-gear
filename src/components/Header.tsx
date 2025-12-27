@@ -51,12 +51,21 @@ const Header = () => {
             }}
             className="flex items-center gap-3 group"
           >
-            <div className="w-12 h-12 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">ت</span>
+            <div className="w-12 h-12 rounded-lg  flex items-center justify-center">
+              {/* <span className="text-primary-foreground font-bold text-xl">ت</span> */}
+              <img
+                src="/logo.jpg"
+                alt="Logo"
+                className="w-10 h-10 rounded-md"
+              />
             </div>
             <div className="flex flex-col">
-              <span className="text-lg font-bold text-primary">الترس الذهبي</span>
-              <span className="text-xs text-muted-foreground">للآليات والمركبات</span>
+              <span className="text-lg font-bold text-primary">
+                الترس الذهبي
+              </span>
+              <span className="text-xs text-muted-foreground">
+                للآليات والمركبات
+              </span>
             </div>
           </a>
 
@@ -96,13 +105,17 @@ const Header = () => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="lg:hidden p-2 text-secondary-foreground hover:text-primary transition-colors"
           >
-            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         <div
-          className={`lg:hidden overflow-hidden transition-all duration-300 ${
+          className={`lg:hidden overflow-hidden transition-all bg-secondary/80 rounded-md duration-300 ${
             isMobileMenuOpen ? "max-h-[400px] pb-6" : "max-h-0"
           }`}
         >
