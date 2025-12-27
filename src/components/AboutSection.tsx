@@ -14,7 +14,8 @@ const features = [
   {
     icon: TrendingUp,
     title: "مركبات حديثة",
-    description: "تشكيلة واسعة من المركبات الحديثة ومعدات النقل متعددة الاستخدامات",
+    description:
+      "تشكيلة واسعة من المركبات الحديثة ومعدات النقل متعددة الاستخدامات",
   },
   {
     icon: Target,
@@ -36,8 +37,9 @@ const AboutSection = () => {
             <span className="text-primary">الترس الذهبي</span> - شريككم الموثوق
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            شركة الترس الذهبي هي واحدة من أبرز الشركات الرائدة في استيراد الآليات الثقيلة،
-            المركبات، وقطع الغيار الأصلية، بالإضافة إلى تجهيزات المصانع والمشاريع الكبرى في ليبيا.
+            شركة الترس الذهبي هي واحدة من أبرز الشركات الرائدة في استيراد
+            الآليات الثقيلة، المركبات، وقطع الغيار الأصلية، بالإضافة إلى تجهيزات
+            المصانع والمشاريع الكبرى في ليبيا.
           </p>
         </div>
 
@@ -52,8 +54,12 @@ const AboutSection = () => {
               <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
                 <feature.icon className="w-8 h-8 text-primary group-hover:text-primary-foreground transition-colors" />
               </div>
-              <h3 className="text-lg font-bold text-secondary mb-2">{feature.title}</h3>
-              <p className="text-muted-foreground text-sm">{feature.description}</p>
+              <h3 className="text-lg font-bold text-secondary mb-2">
+                {feature.title}
+              </h3>
+              <p className="text-muted-foreground text-sm">
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>
@@ -67,16 +73,17 @@ const AboutSection = () => {
             </h3>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                نحرص في شركة الترس الذهبي على توفير منتجات عالية الجودة تلبي المعايير الدولية،
-                بدءاً من المركبات الحديثة وصولاً إلى معدات النقل متعددة الاستخدامات.
+                نحرص في شركة الترس الذهبي على توفير منتجات عالية الجودة تلبي
+                المعايير الدولية، بدءاً من المركبات الحديثة وصولاً إلى معدات
+                النقل متعددة الاستخدامات.
               </p>
               <p>
                 رؤيتنا تتمحور حول الارتقاء بمستوى قطاع النقل والآليات في ليبيا،
                 من خلال تقديم حلول متطورة ومبتكرة تواكب التطورات العالمية.
               </p>
               <p>
-                نسعى دائماً لخدمة الأفراد والشركات والمؤسسات بأعلى معايير الجودة والالتزام،
-                مع ضمان الشفافية الكاملة في جميع تعاملاتنا.
+                نسعى دائماً لخدمة الأفراد والشركات والمؤسسات بأعلى معايير الجودة
+                والالتزام، مع ضمان الشفافية الكاملة في جميع تعاملاتنا.
               </p>
             </div>
           </div>
@@ -85,19 +92,27 @@ const AboutSection = () => {
           <div className="order-1 lg:order-2">
             <div className="grid grid-cols-2 gap-4">
               <div className="card-industrial text-center p-8">
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">+١٥</div>
+                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
+                  +15
+                </div>
                 <div className="text-muted-foreground">سنة خبرة</div>
               </div>
               <div className="card-industrial text-center p-8">
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">+٥٠٠</div>
+                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
+                  +500
+                </div>
                 <div className="text-muted-foreground">عميل راضٍ</div>
               </div>
               <div className="card-industrial text-center p-8">
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">+١٠٠٠</div>
+                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
+                  +1000
+                </div>
                 <div className="text-muted-foreground">منتج</div>
               </div>
               <div className="card-industrial text-center p-8">
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">+٢٠</div>
+                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
+                  +20
+                </div>
                 <div className="text-muted-foreground">شريك عالمي</div>
               </div>
             </div>
